@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <center>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kode Pegawai</title>
@@ -16,16 +16,18 @@
 
         form {
             width: 300px;
+            max-width:100%;
             margin: 5px;
             padding: 30px;
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: #f5f5f5;
+            margin-left: 36%;
             }
 
         table {
             width: 100%;
-            margin-top: 5px;
+            margin-top: 5px;                 
         }
 
         input[type="number"] {
@@ -44,12 +46,13 @@
             border: none;
             border-radius: 3px;
             cursor: pointer;
-            margin-left: -280px;
+            margin-left: -285px;
         }
 
         .besar {
             font-size: 13px; 
             color: #fff; 
+            margin-left: 38%
         }
             
         
@@ -60,14 +63,19 @@
             width: 280px;
             height: 35px;
          }
+
+         .tekss{
+            text-align:center;
+            padding:2%;
+         }
+
     </style>
     
 </head>
 <body>
     <form action= "" method=post>
         <table>
-        <tr>
-           
+        <tr> 
             <div style="text-align: center;">
              <h2>Input Kode Pegawai</h2>
             </div>
@@ -100,7 +108,7 @@
 
 
         if ($kode_pegawai < 11){
-            echo"no pegawai tidak sesuai";
+            echo "<div class='tekss'>No Pegawai Tidak Sesuai";
         }else if ($bulan=="01"){
             $bulan = "Januari";
         } else if($bulan =="02"){
